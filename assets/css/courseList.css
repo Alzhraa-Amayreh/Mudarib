@@ -1,0 +1,101 @@
+
+/* heder start */
+
+.header{
+    background-image: url('../image/courseList/background.webp');
+    background-size: cover;
+}
+
+.text a {
+
+  transition: color 0.3s ease;
+}
+.text :hover a {
+  color: #2bab95!important;
+}
+
+/* header end */
+
+/* search & grid buttons start */
+.courses btn{
+  border: solid #e3e1dc 1px;
+}
+.courses button:hover  {
+ 
+  color:  #2bab95;
+  border: solid #2bab95 1px;
+ 
+}
+/* End */
+
+/* right side of the page start */
+.categories{
+  padding-top:70px;
+
+}
+/* radio buttons */
+.form-check-input:hover {
+  border-color: #2bab95; 
+  background-color: #e6f0ff; 
+  box-shadow: 0 0 0 0.2rem #2bab95; 
+  cursor: pointer;
+}
+/* the rightside cards */
+.sub-card{
+  width:300px;
+
+   
+}
+/* right side of the page End */
+
+/* main cards start */
+.card a {
+
+  transition: color 0.3s ease;
+}
+.card :hover a {
+  color: #2bab95!important;
+}
+
+
+/* main cards End */
+
+/* footer */
+.log-in button{
+    color: #fff;
+    background-color: #2bab95;
+}
+.pay-way img{
+    width:45px;
+    height: 28px;;
+}
+.stores img{
+    width: 129px;
+    height: 40px;
+}
+.social i{
+color: black;
+}
+.row h6{
+    font-size: 12px;
+    font-family: var(--mainfont);
+}
+
+@media (max-width: 767px) {
+  .pay-way {
+    margin-top: 20px;
+   
+  }
+  .stores{
+    margin-top: 20px;
+  }
+  .social{
+     margin-top: 20px;
+   
+     
+  }
+}
+
+/* footer end */
+
+

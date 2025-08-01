@@ -1,0 +1,193 @@
+/* PUPLIC TAGS  */
+:root{
+    --maincolor:#2bab95;
+    --mainfont:"League Spartan", sans-serif;
+    font-family: "League Spartan", sans-serif;
+}
+.maincolor{
+    color:var(--maincolor)
+}
+.text__maincolor{
+    color: #2bab95;
+}
+.text__secondarycolor{
+  color:#a3a3a3;
+}
+span{
+  color:#2558cf;
+}
+/* PUPLIC TAGS (END) */
+
+/* DROPDOWNS (START) */
+.dropdown .dropdown-menu{
+    display: none;
+}
+
+.dropdown:hover > .dropdown-menu ,
+.dropend:hover > .dropdown-menu{
+    display:block;
+   
+    margin-top: 0;
+}
+
+.dropdown:hover >.dropdown-toggle::after{
+     transform: rotate(180deg);
+    
+
+}
+.dropdown-toggle::after{
+    color: var(--maincolor);
+}
+
+.dropend:hover > .dropdown-menu{
+     display:block;
+    margin-top: 0;
+}
+.dropend:hover > .dropdown-menu{
+    position: absolute;
+    top: 0;
+    left:100%;
+    margin-left: 0;
+}
+/* DROPDOWNS END */
+
+.icons span{
+    background-color: var(--maincolor);
+}
+/* singe up start */
+.signe-up{
+  background-image: url('../image/signe-up/background.webp');
+   
+}
+.signe-up h2{
+  color: #fff;
+  
+}
+.signe-up span{
+  color: var(--maincolor);
+}
+.left-slide{
+  top:0px;
+  left:-30px;
+  
+}
+@media screen and (max-width:1400px) {
+  .left-slide{
+    left: -80px;
+  }
+  
+}
+@media screen and (max-width:1100px) {
+  .left-slide{
+  display: none;
+  }
+  
+}
+
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+border-radius: 5px;
+right: 150px;
+color:#fff;
+
+background-color:#2bab95 ;
+}
+
+.input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating){
+  border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width:440px) {
+  .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+    display: none;}
+}
+.right-slide{
+  top:10px;
+  right:-20px;
+}
+@media screen and (max-width:1300px) {
+
+  .right-slide{
+  top:10px;
+  right:-100px;
+}
+}
+@media screen and (max-width:1000px) {
+
+  .right-slide{
+  display: none;
+}
+}
+
+/* signe up End */
+
+/* footer */
+.drop-cap::first-letter {
+  float: left;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--maincolor); 
+  padding-right: 10px;
+  line-height: 1;
+}
+.link-list{
+gap:15px;
+
+}
+.footer a:hover {
+  color: var(--maincolor);
+}
+.footer address:hover {
+  color: var(--maincolor);
+}
+
+@media (max-width: 767px) {
+  .top-categories {
+    margin-top: 20px;
+   
+  }
+  .contact{
+    margin-top: 20px;
+  }
+}
+/* footer */
+
+
+/* footer */
+.log-in button{
+    color: #fff;
+    background-color: #2bab95;
+}
+.pay-way img{
+    width:45px;
+    height: 28px;;
+}
+.stores img{
+    width: 129px;
+    height: 40px;
+}
+.social i{
+color: black;
+}
+.row h6{
+    font-size: 12px;
+    font-family: var(--mainfont);
+}
+
+@media (max-width: 767px) {
+  .pay-way {
+    margin-top: 20px;
+   
+  }
+  .stores{
+    margin-top: 20px;
+  }
+  .social{
+     margin-top: 20px;
+   
+     
+  }
+}
+
+/* footer end */

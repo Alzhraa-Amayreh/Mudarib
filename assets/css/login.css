@@ -1,0 +1,40 @@
+
+:root{
+    --maincolor:#2bab95;
+    --mainfont:"League Spartan", sans-serif;
+    font-family: "League Spartan", sans-serif;
+}
+.log-in button{
+    color: #fff;
+    background-color: #2bab95;
+}
+.pay-way img{
+    width:45px;
+    height: 28px;;
+}
+.stores img{
+    width: 129px;
+    height: 40px;
+}
+.social i{
+color: black;
+}
+.row h6{
+    font-size: 12px;
+    font-family: var(--mainfont);
+}
+
+@media (max-width: 767px) {
+  .pay-way {
+    margin-top: 20px;
+   
+  }
+  .stores{
+    margin-top: 20px;
+  }
+  .social{
+     margin-top: 20px;
+   
+     
+  }
+}

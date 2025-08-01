@@ -1,0 +1,71 @@
+
+/* header strart */
+.header{
+    background-image: url('../image/courseList/background.webp');
+    background-size: cover;
+}
+
+/* End */
+
+/* sub-nav start */
+.nav{
+    background-color: #fafafa;
+}
+.nav a, .detailes p,.para-3 li a {
+    color: #6f7073;
+}
+/* End */
+
+/* paragraph styling start */
+.para-3 li a {
+    font-size: 15px;
+
+}
+
+.para-3 li a:hover{
+    color:#2bab95;
+}
+.para-3 button{
+    background-color: #2bab95;
+}
+.para-3 button:hover{
+    background-color: #262626;
+   
+}
+
+.links span{
+    color: #6f7073;
+
+}
+/* End */
+
+/* related courses start */
+
+.related-courses {
+    background-image:url('../image/about/background.webp');
+    background-size: cover;
+}
+
+@media screen and (max-width:768px) {
+  .card{
+    margin-bottom:20px;
+  
+   }
+    
+}
+/* End */
+
+/* right sude card start */
+.list-group button{
+    background-color: #2bab95;
+   
+
+}
+
+.list-group button:hover{
+    background-color: #2bab95;
+    color: #fafafa;
+}
+
+/* End */
+

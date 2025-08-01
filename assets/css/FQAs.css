@@ -1,0 +1,8 @@
+.header{
+    background-image: url('../image/FQAs/pagetitle2.webp');
+    background-size: cover;
+}
+
+.accordion button{
+    font-size: 20px;
+}
