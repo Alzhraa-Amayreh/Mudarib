@@ -4,6 +4,9 @@
     --mainfont:"League Spartan", sans-serif;
     font-family: "League Spartan", sans-serif;
 }
+body{
+  font-family: var(--mainfont);
+}
 .maincolor{
     color:var(--maincolor)
 }
@@ -50,6 +53,63 @@ span{
     margin-left: 0;
 }
 /* DROPDOWNS END */
+/* navbar on scrol */
+.nav-onscrol{
+  background-color:  #F8F1E7;
+ 
+}
+/* end of navbar scrol */
+
+/* modal css (start) */
+.my-modal{
+   position: fixed; 
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s;
+}
+.show-modal{
+opacity: 1;
+visibility: visible;
+}
+
+.modal-content{
+    background-color: #fdfcfc;
+    height:400px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.right,.left,.fa-x{
+   
+    position: absolute;
+  
+    color: #2b2a2a;
+    cursor: pointer;
+
+}
+.fa-x{
+    top:15px;
+    right: 15px;
+}
+.right{
+    top:50%;
+    right: 30px;
+}
+.left{
+    top:50%;
+    left:30px;
+}
 
 .icons span{
     background-color: var(--maincolor);

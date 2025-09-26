@@ -4,6 +4,9 @@
     --mainfont:"League Spartan", sans-serif;
     font-family: "League Spartan", sans-serif;
 }
+body{
+  font-family: var(--mainfont);
+}
 .maincolor{
     color:var(--maincolor)
 }
@@ -50,7 +53,12 @@ span{
     margin-left: 0;
 }
 /* DROPDOWNS END */
-
+/* navbar on scrol */
+.nav-onscrol{
+  background-color:  #F8F1E7;
+ 
+}
+/* end of navbar scrol */
 /* HEADER (HERO) */
 .icons span{
     background-color: var(--maincolor);
@@ -389,6 +397,50 @@ color: var(--maincolor);
   }
 
 /* END */
+/* modal section */
+.my-modal{
+   /* position: absolute; */
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+    background-color: #b68383;
+    height:400px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right,.left,.fa-x{
+   
+    position: absolute;
+  
+    color: #2b2a2a;
+    cursor: pointer;
+
+}
+.fa-x{
+    top:15px;
+    right: 15px;
+}
+.right{
+    top:50%;
+    right: 30px;
+}
+.left{
+    top:50%;
+    left:30px;
+}
+.end{
+  height: 500px;
+}
 
 /* news section start */
 .news{
