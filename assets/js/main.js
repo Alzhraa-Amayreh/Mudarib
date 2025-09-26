@@ -29,8 +29,9 @@ const close=document.querySelector(".close");
 const currentPage=window.location.pathname ;
 
 //  navbar color change code (start)
+console.log(currentPage);
 
-if(currentPage.includes("index.html")) 
+if(currentPage.includes("index.html"||currentPage==="/Mudarib/")) 
  {
   console.log('hello');
   window.onscroll=()=>{
