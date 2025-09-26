@@ -30,7 +30,7 @@ const currentPage=window.location.pathname ;
 
 //  navbar color change code (start)
 
-if(currentPage==="/C:/Users/pc/Documents/Full%20stack%20cours/Educational%20website/index.html") 
+if(currentPage.includes("index.html")) 
  {
   console.log('hello');
   window.onscroll=()=>{
@@ -45,7 +45,7 @@ if(currentPage==="/C:/Users/pc/Documents/Full%20stack%20cours/Educational%20webs
     }
   }
 }
-  else if(currentPage==="/C:/Users/pc/Documents/Full%20stack%20cours/Educational%20website/courseList.html")
+  else if(currentPage.includes("courseList.html"))
   {
    
        window.onscroll=()=>{
@@ -60,7 +60,7 @@ if(currentPage==="/C:/Users/pc/Documents/Full%20stack%20cours/Educational%20webs
     }
   }
   }
-  else if(currentPage==="/C:/Users/pc/Documents/Full%20stack%20cours/Educational%20website/course.html"){
+  else if(currentPage.includes("course.html")){
           window.onscroll=()=>{
 
     if (window.scrollY>= coursViewSection.offsetTop){
@@ -73,7 +73,7 @@ if(currentPage==="/C:/Users/pc/Documents/Full%20stack%20cours/Educational%20webs
     }
   }
   }
-    else if(currentPage==="/C:/Users/pc/Documents/Full%20stack%20cours/Educational%20website/FQAs.html"){
+    else if(currentPage.includes("FQAs.html")){
           window.onscroll=()=>{
 
     if (window.scrollY>= FQAsSection.offsetTop){
@@ -99,8 +99,8 @@ const cards = [];
 let currentCardIndex=0;
 products.forEach((product,index) => {
    const img = product.querySelector("img").getAttribute("src");
-   const title = product.querySelector(".card-title").innerText;
-   const text = product.querySelector(".card-text").innerText;
+   const title = product.querySelector(".card-title").textContent;
+   const text = product.querySelector(".card-text").textContent;
 
    const card = {
      cardImg: img,
@@ -110,7 +110,7 @@ products.forEach((product,index) => {
 
    cards.push(card); 
    product.addEventListener("click",()=>{
-     currentCardIndex=index;
+    currentCardIndex=index;
   modalImg.setAttribute("src",card.cardImg);
 
   modalTitle.innerHTML=card.cardTitle;
